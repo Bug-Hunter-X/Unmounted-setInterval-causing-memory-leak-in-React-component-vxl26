@@ -1,0 +1,3 @@
+# Unmounted setInterval causing memory leak in React component
+
+This repository demonstrates a common React bug: a memory leak caused by an unmounted `setInterval`.  The `setInterval` continues to run even after the component unmounts, leading to memory consumption and potential performance issues.  The solution demonstrates how to properly clear the interval using `clearInterval` within the cleanup function of the `useEffect` hook.
